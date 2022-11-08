@@ -1,0 +1,90 @@
+h1 {
+  color: grey;
+}
+body {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+p {
+  color: darkgray;
+}
+
+section {
+  text-align: left;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px 1px gray;
+  margin: 5%;
+  min-width: 70%;
+  padding: 1%;
+  padding-left: 5%;
+  padding-right: 10%;
+}
+
+section img {
+  position: relative;
+  left: 70%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#supervisor {
+  border-top: 4px solid cyan;
+}
+#team {
+  border-top: 4px solid red;
+}
+#karma {
+  border-top: 4px solid orange;
+}
+#calculator {
+  border-top: 4px solid cornflowerblue;
+}
+
+@media (min-width: 300px) {
+  section img {
+    left: 80%;
+  }
+}
+
+@media (min-width: 400px) {
+  section {
+    max-width: 40%;
+  }
+  section img {
+    left: 85%;
+  }
+}
+
+@media (min-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #resume {
+    grid-column: 1/4;
+  }
+  #supervisor {
+    grid-row: 2/4;
+  }
+  #karma {
+    grid-column: 3/4;
+    grid-row: 2/4;
+  }
+  section img {
+    left: 60%;
+  }
+}
+
+@media (min-width: 900px) {
+  section img {
+    left: 75%;
+  }
+  .container {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
