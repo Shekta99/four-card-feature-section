@@ -70,7 +70,7 @@ section img {
   #supervisor {
     grid-row: 2/4;
   }
-  #karma {
+  #calculator {
     grid-column: 3/4;
     grid-row: 2/4;
   }
